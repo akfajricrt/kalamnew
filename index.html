@@ -83,6 +83,25 @@
             <!-- <div class="d-flex justify-content-center">
                     <button class="btn btn-set d-inline-flex text-white">Set Your Account</button>
                 </div> -->
+            
+            <div id="countdown-row" class="row justify-content-center mt-8 mb-5 " stye="color:#000">
+                <div class="col-auto">
+                    <div class="text-sm fw-bold" data-days>66</div>
+                    <div class="text-sm fw-bold">HARI</div>
+                </div>
+                <div class="col-auto">
+                    <div class="text-sm" data-hours>66</div>
+                    <div class="text-sm fw-bold">JAM</div>
+                </div>
+                <div class="col-auto">
+                    <div class="text-sm fw-bold" data-minutes>66</div>
+                    <div class="text-sm fw-bold">MENIT</div>
+                </div>
+                <div class="col-auto">
+                    <div class="text-sm fw-bold" data-seconds>66</div>
+                    <div class="text-sm fw-bold">DETIK</div>
+                </div>
+            </div>
           </div>
         </div>
       </div>
@@ -92,5 +111,17 @@
       integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
       crossorigin="anonymous"
     ></script>
+    
+    <script>
+      timezz('#countdown-row', {
+        date: new Date(2021, 4, 29, 14, 52),
+        stop: false,
+        canContinue: false,
+        withYears: false,
+        beforeCreate() {},
+        beforeDestroy() {},
+        update(event) {},
+    });
+    </script>
   </body>
 </html>
